@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Choice - Checkout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            color: #28a745;
+        }
+        form {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 0 auto;
+            width: 400px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input[type="text"], form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Billing Information</h2>
+        <form action="thankyou.html">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="card">Card Number:</label>
+            <input type="text" id="card" name="card" required>
+
+            <label for="exp">Expiry Date:</label>
+            <input type="text" id="exp" name="exp" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <input type="submit" value="Place Order">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Choice - Karachi, Pakistan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

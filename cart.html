@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Choice - Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            color: #28a745;
+        }
+        .cart-items {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 0 auto;
+            width: 80%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .item-info {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+        .item-info span {
+            margin-right: 15px;
+        }
+        .quantity {
+            display: flex;
+            align-items: center;
+        }
+        .quantity input {
+            width: 40px;
+            text-align: center;
+            margin: 0 5px;
+        }
+        .cart-item a {
+            color: #dc3545;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .total {
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: right;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .proceed-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .proceed-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Cart</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Items in Cart</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="item-info">
+                    <img src="s24ultra.jpeg" alt="Product 1">
+                    <span>s24ultra</span>
+                    <div class="quantity">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
+                    </div>
+                </div>
+                <span>PKR 400000</span>
+                <a href="#">Remove</a>
+            </div>
+            <div class="cart-item">
+                <div class="item-info">
+                    <img src="fold6.jpeg" alt="Product 2">
+                    <span>fold6</span>
+                    <div class="quantity">
+                        <button>-</button>
+                        <input type="number" value="1" min="1">
+                        <button>+</button>
+                    </div>
+                </div>
+                <span>PKR 600000</span>
+                <a href="#">Remove</a>
+            </div>
+            <div class="total">
+                <span>Total:</span>
+                <span>PKR 1000,000</span>
+            </div>
+        </div>
+        <a href="checkout.html" class="proceed-button">Proceed to Checkout</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Choice - Karachi, Pakistan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

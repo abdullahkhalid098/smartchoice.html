@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Choice - Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            color: #28a745;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 200px;
+        }
+        .product h3 {
+            margin: 0;
+            color: #28a745;
+        }
+        .product p {
+            margin: 10px 0;
+        }
+        .product a {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .product a:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Choice Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Available Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="s24ultra.jpeg" alt="">
+                <h3>SAMSUNG S24 ultra</h3>
+                <p>Price: PKR 400000</p>
+                <a href="cart.html">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="fold6.jpeg" alt="FOLD 6">
+                <h3>FOLD 6</h3>
+                <p>Price: PKR 600000</p>
+                <a href="cart.html">Add to Cart</a>
+            </div>
+            <div class="product">
+                <img src="realmenote50.jpg" alt="" style="    width: 205px;">
+                <h3></h3>REALME NOTE 50
+                <p>Price: PKR 25000</p>
+                <a href="cart.html">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Choice - Karachi, Pakistan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
